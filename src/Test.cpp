@@ -16,39 +16,53 @@ using namespace std;
 
 int main(){
 	setlocale(LC_ALL,"Turkish");
-
 	Liste* liste = new Liste();
 	
+	string satir = "" , temp = "";
+	int index = 0, alinanSayi = 0;
+	
 	ifstream oku("Veri.txt");
-	string satir = "";
-	string temp = "";
-	int index = 0;
 	if(oku.is_open()){
 		while(getline(oku,satir,'\n')){
 			
 			char islemDegeri = satir[0];
-			// 0 ın ascii karşılığı 48 dir ve sayıların değerlerini bulmak için de ascii değerlerinden 0 değerlerini çıkardım.
-			int index = satir[2] - 48;
+			
 			if(islemDegeri == 'E'){
-				for(int i = 4; i < satir.length() - 1; i++){
+				for(int i = 2; i < satir.length(); i++){
+					if(satir[i] == '#')
+					{
+						index = i;
+						break;
+					}
+					else
+						temp += satir[i];
+				}
+				alinanSayi = stoi(temp);
+				temp = "";
+				
+				for(int i = index + 1; i < satir.length() - 1; i++){
 					temp += satir[i];
 				}
 				
-				if(index < liste->dugumSayisiGetir()){
-					liste->arayaEkle(temp,index);
+				if(alinanSayi < liste->dugumSayisiGetir()){
+					liste->arayaEkle(temp,alinanSayi);
 				}
 				else
 					liste->ekle(temp);	
 				temp = "";
 			}
 			else{
-				if(index < liste->dugumSayisiGetir())
-					liste->aradanSil(index);
+				for(int i = 2; i < satir.length() - 1; i++){
+					temp += satir[i];
+				}
+				alinanSayi = stoi(temp);
+				
+				if(alinanSayi < liste->dugumSayisiGetir())
+					liste->aradanSil(alinanSayi);
 				else
 					liste->sil();
 				temp = "";
 			}
-			
 		}
 		oku.close();
 		
