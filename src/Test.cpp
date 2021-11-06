@@ -64,9 +64,9 @@ int main(){
 				temp = "";
 			}
 		}
-		oku.close();
-		
-		liste->yazdir();
 	}
+	oku.close();
+	liste->yazdir();
+	
 	return 0;
 }
