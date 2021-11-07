@@ -67,6 +67,6 @@ int main(){
 	}
 	oku.close();
 	liste->yazdir();
-	
+	delete liste;
 	return 0;
 }
