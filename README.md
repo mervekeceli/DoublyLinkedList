@@ -22,6 +22,7 @@ mingw32-make
 ## 📷 Screenshots
 
 <div style="display: flex; width: 1000px; justify-content: space-evenly;">
-  <img src="" width="400px;" alt=""/>
+  <img src="![doublylinkedlist](https://user-images.githubusercontent.com/56134222/151681590-ca3cf97b-0737-4618-a387-8ffbbf51fe0e.PNG)" width="400px;" alt=""/>
 </div>
+
 
