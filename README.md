@@ -20,6 +20,9 @@ mingw32-make
 ```
 
 ## 📷 Screenshots
+<div style="width:400px;">
+![doublylinkedlist](https://user-images.githubusercontent.com/56134222/151681590-ca3cf97b-0737-4618-a387-8ffbbf51fe0e.PNG)
+</div>
 ![doublylinkedlist](https://user-images.githubusercontent.com/56134222/151681590-ca3cf97b-0737-4618-a387-8ffbbf51fe0e.PNG)
 <div style="display: flex; width: 1000px; justify-content: space-evenly;">
   <img src="![doublylinkedlist](https://user-images.githubusercontent.com/56134222/151681590-ca3cf97b-0737-4618-a387-8ffbbf51fe0e.PNG)" width="400px;" alt=""/>
