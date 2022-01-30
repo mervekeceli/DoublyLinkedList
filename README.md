@@ -25,7 +25,7 @@ mingw32-make
 </div>
 ![doublylinkedlist](https://user-images.githubusercontent.com/56134222/151681590-ca3cf97b-0737-4618-a387-8ffbbf51fe0e.PNG)
 <div style="display: flex; width: 1000px; justify-content: space-evenly;">
-  <img src="blob:https://web.whatsapp.com/d12ed78a-9041-4d08-922e-162c3bdf1e63" width="400px;" alt=""/>
+  <img src="https://web.whatsapp.com/d12ed78a-9041-4d08-922e-162c3bdf1e63" width="400px;" alt=""/>
 </div>
 
 
